@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-brand-terracotta-dark: #5C3327;
+  --color-brand-terracotta-main: #68392C;
+  --color-brand-terracotta-rust: #B85D36;
+  --color-brand-terracotta-light: #EBDAD3;
+  
+  --color-brand-sage-dark: #4E594F;
+  --color-brand-sage-main: #677568;
+  --color-brand-sage-light: #9DAA9E;
+  --color-brand-sage-subtle: #E3E9E3;
+
+  --color-brand-charcoal: #1D1F1E;
+  --color-brand-cream: #F6EFEE;
+  --color-brand-cream-card: #FAF5F2;
+  --color-brand-linen: #ECE3D8;
+}
+
+/* Glassmorphism & Custom Shadow Utilities */
+.glass-panel {
+  background: rgba(250, 245, 242, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(104, 57, 44, 0.12);
+}
+
+.glass-panel-dark {
+  background: rgba(29, 31, 30, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(235, 218, 211, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(104, 57, 44, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(92, 51, 39, 0.06);
+}
+
+.shadow-luxury {
+  box-shadow: 0 20px 40px -15px rgba(92, 51, 39, 0.08), 0 0 15px -3px rgba(184, 93, 54, 0.04);
+}
+
+.font-serif-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-brand {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Pulse Glow Keyframes */
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.04); opacity: 0.95; }
+}
+
+.animate-subtle-pulse {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EFEE;
+}
+::-webkit-scrollbar-thumb {
+  background: #B85D36;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C3327;
+}
