@@ -57,12 +57,12 @@ export default function Hero({ onOpenBooking }) {
       {/* MOBILE & TABLET BACKGROUND (Top Half) */}
       <div className="lg:hidden absolute top-0 inset-x-0 h-[65vh] sm:h-[70vh] z-0 overflow-hidden bg-[#FAF5F2]">
         <img
-          src="/assets/dra_carolina_white_shirt.jpg"
+          src="/assets/dra_carolina_mobile_hero.jpg"
           alt="Dra. Carolina Pitelli"
           className="hero-bg-img-mobile w-full h-full object-cover object-top opacity-100"
         />
         {/* Fade to solid cream at the bottom of the mobile photo */}
-        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#FAF5F2] via-[#FAF5F2]/85 via-50% to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-1/5 bg-gradient-to-t from-[#FAF5F2] to-transparent pointer-events-none" />
       </div>
 
       {/* MAIN CONTENT CONTAINER */}
