@@ -155,6 +155,38 @@ export default function ClinicHonosSection({ onOpenBooking }) {
           </div>
         </div>
 
+        {/* Map Section */}
+        <div className="mt-12 pt-10 border-t border-[#5C3327]/15">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 bg-[#5C3327]/10 border border-[#5C3327]/20 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-[#5C3327] mb-3">
+                <MapPin className="w-3.5 h-3.5 text-[#B85D36]" />
+                <span>Nossa Localização</span>
+              </div>
+              <h3 className="font-serif-brand text-2xl sm:text-3xl font-semibold text-[#1D1F1E] mb-3">
+                Como chegar na Clínica Honos
+              </h3>
+              <p className="text-[#4E594F] font-light text-sm sm:text-base mb-4 leading-relaxed">
+                Av. José Munia, 7301<br />
+                4º andar, salas 401 e 402<br />
+                São José do Rio Preto - SP
+              </p>
+            </div>
+            <div className="w-full h-64 sm:h-80 rounded-3xl overflow-hidden shadow-xl border border-[#5C3327]/15 bg-[#E8DED5]">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                frameBorder="0" 
+                scrolling="no" 
+                marginHeight="0" 
+                marginWidth="0" 
+                src="https://maps.google.com/maps?q=Av.%20Jos%C3%A9%20Munia,%207301,%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Mapa Clínica Honos"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

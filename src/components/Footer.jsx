@@ -117,13 +117,17 @@ export default function Footer({ onOpenBooking }) {
                 </div>
               </a>
 
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-[#5C3327] flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-[#5C3327] flex items-center justify-center shrink-0 mt-1">
                   <MapPin className="w-4 h-4 text-[#B85D36]" />
                 </div>
                 <div>
-                  <p className="text-xs text-[#9DAA9E]">Atendimento Presencial</p>
-                  <p className="font-semibold text-white">Clínica Honos</p>
+                  <p className="text-xs text-[#9DAA9E]">Clínica Honos</p>
+                  <p className="font-semibold text-white text-sm leading-snug">
+                    Av. José Munia, 7301<br />
+                    4º andar, salas 401 e 402<br />
+                    São José do Rio Preto - SP
+                  </p>
                 </div>
               </div>
             </div>
@@ -133,14 +137,22 @@ export default function Footer({ onOpenBooking }) {
         </div>
 
         {/* Bottom Legal Rights & Disclaimer */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#ECE3D8]/50">
-          <p>
-            © {new Date().getFullYear()} Dra. Carolina Pitelli — Endocrinologista CRM/SP 211.934 | RQE 147.555. Todos os direitos reservados.
-          </p>
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-[#ECE3D8]/50 border-t border-white/10 mt-8">
+          <div className="space-y-3 text-center md:text-left max-w-4xl">
+            <p className="text-[#ECE3D8]/70">
+              <strong className="text-[#ECE3D8]/90">Aviso Legal (CFM):</strong> As informações contidas neste site têm caráter estritamente educativo e informativo, não substituindo a consulta médica e o diagnóstico prévio.
+            </p>
+            <p>
+              © {new Date().getFullYear()} Dra. Carolina Pitelli — Endocrinologista CRM/SP 211.934 | RQE 147.555. Todos os direitos reservados.
+            </p>
+            <div className="flex items-center gap-4 justify-center md:justify-start pt-1">
+              <a href="#" className="hover:text-white transition-colors underline underline-offset-2">Política de Privacidade (LGPD)</a>
+            </div>
+          </div>
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer"
+            className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer shrink-0"
           >
             <span>Voltar ao topo</span>
             <ArrowUp className="w-4 h-4 text-[#B85D36]" />
