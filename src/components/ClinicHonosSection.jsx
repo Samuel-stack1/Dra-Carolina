@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Clock, Shield, Building2, ArrowRight } from 'lucide-react';
+import { Clock, Shield, Building2, ArrowRight, MapPin } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
