@@ -160,13 +160,13 @@ export default function ClinicHonosSection({ onOpenBooking }) {
           {/* Decorative background blob behind the map section */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#5C3327]/5 to-transparent rounded-[2.5rem] -mx-2 sm:-mx-8 pointer-events-none"></div>
           
-          <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-[2.5rem] bg-white border border-[#5C3327]/10 shadow-xl overflow-hidden">
+          <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-[2.5rem] bg-white/70 backdrop-blur-2xl border border-white shadow-[0_8px_30px_rgb(92,51,39,0.06)] overflow-hidden">
             
             {/* Subtle corner graphic */}
             <div className="absolute -top-16 -right-16 w-32 h-32 bg-[#B85D36]/10 rounded-full blur-3xl pointer-events-none"></div>
             
             <div className="lg:col-span-5 text-center lg:text-left space-y-5 relative z-10">
-              <div className="inline-flex items-center gap-2 bg-[#FAF5F2] border border-[#5C3327]/10 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#5C3327] shadow-sm">
+              <div className="inline-flex items-center gap-2 bg-[#FAF5F2]/80 border border-white px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#5C3327]">
                 <MapPin className="w-4 h-4 text-[#B85D36]" />
                 <span>Nossa Localização</span>
               </div>
@@ -178,8 +178,8 @@ export default function ClinicHonosSection({ onOpenBooking }) {
               </p>
               
               <div className="pt-2 flex justify-center lg:justify-start">
-                <div className="bg-[#FAF5F2] p-5 rounded-2xl border border-[#5C3327]/10 text-left shadow-inner flex gap-4 items-start">
-                  <div className="p-2 bg-white rounded-xl shadow-sm shrink-0 border border-[#5C3327]/5">
+                <div className="bg-[#FAF5F2]/50 p-5 rounded-2xl border border-white text-left flex gap-4 items-start backdrop-blur-sm">
+                  <div className="p-2 bg-white rounded-xl shrink-0 border border-[#5C3327]/5 shadow-[0_2px_10px_rgb(92,51,39,0.04)]">
                     <Building2 className="w-5 h-5 text-[#B85D36]" />
                   </div>
                   <div>
@@ -195,9 +195,9 @@ export default function ClinicHonosSection({ onOpenBooking }) {
             </div>
 
             <div className="lg:col-span-7 relative z-10">
-              <div className="relative w-full h-[320px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-[#FAF5F2] border border-[#5C3327]/15 group bg-[#E8DED5] transform transition-transform duration-700 hover:-translate-y-1 hover:shadow-3xl">
+              <div className="relative w-full h-[320px] sm:h-[400px] rounded-3xl overflow-hidden ring-4 ring-white border border-[#5C3327]/10 group bg-[#E8DED5] transform transition-transform duration-700 hover:-translate-y-1 shadow-[0_10px_40px_rgb(92,51,39,0.08)] hover:shadow-[0_15px_50px_rgb(92,51,39,0.12)]">
                 {/* Glassmorphism Inner Border */}
-                <div className="absolute inset-0 border-[6px] border-white/20 rounded-3xl pointer-events-none z-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 border-[6px] border-white/40 rounded-3xl pointer-events-none z-10 mix-blend-overlay"></div>
                 
                 {/* Map Iframe */}
                 <iframe 
