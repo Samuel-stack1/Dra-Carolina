@@ -116,7 +116,7 @@ export default function ManifestoSection({ onOpenBooking }) {
           {/* Left Side: Clean Portrait Photo */}
           <div className="manifesto-photo lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-              <img
+              <img loading="lazy"
                 src="/assets/dra_carolina_brown_top_smile.jpg"
                 alt="Dra. Carolina Pitelli Endocrinologista"
                 className="w-full h-full object-cover object-top hover:scale-103 transition-transform duration-700"
@@ -172,7 +172,7 @@ export default function ManifestoSection({ onOpenBooking }) {
 
             {/* Signature & CTA */}
             <div className="manifesto-footer pt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 border-t border-[#5C3327]/10">
-              <img
+              <img loading="lazy"
                 src="/assets/logo_carolina_pitelli_horizontal.png"
                 alt="Dra. Carolina Pitelli Logo Oficial"
                 className="h-8 w-auto object-contain self-start sm:self-auto"
@@ -196,3 +196,4 @@ export default function ManifestoSection({ onOpenBooking }) {
     </section>
   );
 }
+

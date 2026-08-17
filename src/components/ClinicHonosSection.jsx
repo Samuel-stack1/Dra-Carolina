@@ -114,7 +114,7 @@ export default function ClinicHonosSection({ onOpenBooking }) {
           {/* Right Column (6 cols): Perfectly Scaled Image to fit Viewport without scrolling */}
           <div className="lg:col-span-6 flex items-center justify-center">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-[#5C3327]/15 bg-white max-h-[58vh] flex items-center justify-center">
-              <img
+              <img loading="lazy"
                 src="/assets/foto_dra_carolina_poltrona.jpg"
                 alt="Espaço Clínica Honos"
                 className="max-h-[58vh] w-auto h-auto object-contain block rounded-3xl"
@@ -159,3 +159,4 @@ export default function ClinicHonosSection({ onOpenBooking }) {
     </section>
   );
 }
+

@@ -302,3 +302,4 @@ export default function SpecialtiesSection({ onOpenBooking }) {
     </section>
   );
 }
+

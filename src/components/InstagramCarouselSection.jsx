@@ -175,7 +175,7 @@ export default function InstagramCarouselSection() {
               className="shrink-0 w-64 sm:w-72 aspect-[9/16] rounded-3xl overflow-hidden relative shadow-xl hover:shadow-2xl border border-[#5C3327]/15 group cursor-pointer transition-all duration-300 transform hover:-translate-y-1.5"
             >
               {/* Full Bleed 9:16 Vertical Cover Image */}
-              <img
+              <img loading="lazy"
                 src={reel.image}
                 alt={reel.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -184,7 +184,7 @@ export default function InstagramCarouselSection() {
               {/* Instagram Top Bar Simulation */}
               <div className="absolute top-0 inset-x-0 p-4 bg-gradient-to-b from-black/80 via-black/40 to-transparent flex items-center justify-between z-10">
                 <div className="flex items-center gap-2">
-                  <img
+                  <img loading="lazy"
                     src="/assets/logo_carolina_pitelli_monogram.png"
                     alt="Dra. Carolina Pitelli"
                     className="w-6 h-6 rounded-full border border-white/40 bg-white object-contain"
@@ -288,3 +288,4 @@ export default function InstagramCarouselSection() {
     </section>
   );
 }
+

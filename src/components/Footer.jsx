@@ -39,7 +39,7 @@ export default function Footer({ onOpenBooking }) {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <img
+              <img loading="lazy"
                 src="/assets/logo_carolina_pitelli_vertical.png"
                 alt="Dra. Carolina Pitelli Logo Oficial"
                 className="h-16 w-auto object-contain invert"
@@ -151,3 +151,4 @@ export default function Footer({ onOpenBooking }) {
     </footer>
   );
 }
+

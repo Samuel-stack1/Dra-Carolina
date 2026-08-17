@@ -130,7 +130,7 @@ export default function DoctorBioSection({ onOpenBooking }) {
             
             {/* Primary Main Photo (Armchair) */}
             <div className="bio-photo-main relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-white glass-card">
-              <img
+              <img loading="lazy"
                 src="/assets/dra_carolina_armchair.jpg"
                 alt="Dra. Carolina Pitelli na poltrona do consultório"
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
@@ -140,7 +140,7 @@ export default function DoctorBioSection({ onOpenBooking }) {
               <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 right-3 sm:right-6 p-3 sm:p-4 rounded-2xl glass-panel-dark text-white backdrop-blur-md">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/90 p-1 flex items-center justify-center shrink-0">
-                    <img
+                    <img loading="lazy"
                       src="/assets/logo_carolina_pitelli_monogram.png"
                       alt="CP Monograma"
                       className="w-full h-full object-contain"
@@ -160,7 +160,7 @@ export default function DoctorBioSection({ onOpenBooking }) {
 
             {/* Secondary Floating Overlapping Photo (Blue Blazer) */}
             <div className="bio-photo-secondary absolute -bottom-8 -right-6 hidden sm:block w-48 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white glass-card">
-              <img
+              <img loading="lazy"
                 src="/assets/dra_carolina_blue_blazer.jpg"
                 alt="Dra. Carolina Pitelli perfil profissional"
                 className="w-full h-full object-cover object-top"
@@ -240,3 +240,4 @@ export default function DoctorBioSection({ onOpenBooking }) {
     </section>
   );
 }
+

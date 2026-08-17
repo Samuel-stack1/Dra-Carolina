@@ -50,6 +50,7 @@ export default function Hero({ onOpenBooking }) {
         <img
           src="/assets/dra_carolina_hero_black_top.png"
           alt="Dra. Carolina Pitelli - Endocrinologista"
+          fetchpriority="high"
           className="hero-bg-img-desktop absolute -right-[5%] xl:-right-[10%] bottom-0 h-[92vh] w-auto max-w-none object-contain object-bottom drop-shadow-2xl opacity-100 pointer-events-none"
         />
       </div>
@@ -59,6 +60,7 @@ export default function Hero({ onOpenBooking }) {
         <img
           src="/assets/dra_carolina_mobile_hero.jpg"
           alt="Dra. Carolina Pitelli"
+          fetchpriority="high"
           className="hero-bg-img-mobile w-full h-full object-cover object-top opacity-100"
         />
         {/* Fade to solid cream at the bottom of the mobile photo */}
