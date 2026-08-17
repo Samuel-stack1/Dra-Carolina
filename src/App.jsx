@@ -28,7 +28,7 @@ export default function App() {
   const handleOpenBooking = () => {
     const message = "Olá, equipe da Dra. Carolina Pitelli! Gostaria de saber mais informações sobre agendamento de consultas.";
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/5517991850164?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/5517992285084?text=${encoded}`, '_blank');
   };
 
   return (

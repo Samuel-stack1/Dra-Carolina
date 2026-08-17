@@ -93,7 +93,7 @@ export default function SymptomCheckerQuiz() {
       `\n\nGostaria de entender a causa metabólica/hormonal dessas alterações.`;
 
     const encoded = encodeURIComponent(textMessage);
-    window.open(`https://wa.me/5517991850164?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/5517992285084?text=${encoded}`, '_blank');
   };
 
   return (

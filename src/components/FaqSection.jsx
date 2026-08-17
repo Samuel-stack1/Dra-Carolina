@@ -75,7 +75,7 @@ export default function FaqSection({ onOpenBooking }) {
     {
       question: 'Como faço para agendar um horário?',
       answer:
-        'O agendamento é feito de maneira rápida e direta pelo nosso WhatsApp oficial (17) 99185-0164. Nossa equipe indicará os próximos horários disponíveis de acordo com a sua preferência.',
+        'O agendamento é feito de maneira rápida e direta pelo nosso WhatsApp oficial (17) 99228-5084. Nossa equipe indicará os próximos horários disponíveis de acordo com a sua preferência.',
     },
   ];
 

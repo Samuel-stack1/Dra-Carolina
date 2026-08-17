@@ -96,7 +96,7 @@ export default function Footer({ onOpenBooking }) {
                 </div>
                 <div>
                   <p className="text-xs text-[#9DAA9E]">WhatsApp Oficial</p>
-                  <p className="font-semibold text-white">(17) 99185-0164</p>
+                  <p className="font-semibold text-white">(17) 99228-5084</p>
                 </div>
               </button>
 
