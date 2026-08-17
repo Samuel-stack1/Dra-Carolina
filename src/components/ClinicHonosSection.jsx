@@ -156,34 +156,64 @@ export default function ClinicHonosSection({ onOpenBooking }) {
         </div>
 
         {/* Map Section */}
-        <div className="mt-12 pt-10 border-t border-[#5C3327]/15">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-[#5C3327]/10 border border-[#5C3327]/20 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-[#5C3327] mb-3">
-                <MapPin className="w-3.5 h-3.5 text-[#B85D36]" />
+        <div className="mt-16 sm:mt-24 relative">
+          {/* Decorative background blob behind the map section */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#5C3327]/5 to-transparent rounded-[2.5rem] -mx-2 sm:-mx-8 pointer-events-none"></div>
+          
+          <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-[2.5rem] bg-white border border-[#5C3327]/10 shadow-xl overflow-hidden">
+            
+            {/* Subtle corner graphic */}
+            <div className="absolute -top-16 -right-16 w-32 h-32 bg-[#B85D36]/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div className="lg:col-span-5 text-center lg:text-left space-y-5 relative z-10">
+              <div className="inline-flex items-center gap-2 bg-[#FAF5F2] border border-[#5C3327]/10 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#5C3327] shadow-sm">
+                <MapPin className="w-4 h-4 text-[#B85D36]" />
                 <span>Nossa Localização</span>
               </div>
-              <h3 className="font-serif-brand text-2xl sm:text-3xl font-semibold text-[#1D1F1E] mb-3">
+              <h3 className="font-serif-brand text-3xl sm:text-4xl font-semibold text-[#1D1F1E] leading-tight">
                 Como chegar na Clínica Honos
               </h3>
-              <p className="text-[#4E594F] font-light text-sm sm:text-base mb-4 leading-relaxed">
-                Av. José Munia, 7301<br />
-                4º andar, salas 401 e 402<br />
-                São José do Rio Preto - SP
+              <p className="text-[#4E594F] font-light text-base leading-relaxed">
+                Um espaço planejado para o seu conforto, localizado no coração de Rio Preto.
               </p>
+              
+              <div className="pt-2 flex justify-center lg:justify-start">
+                <div className="bg-[#FAF5F2] p-5 rounded-2xl border border-[#5C3327]/10 text-left shadow-inner flex gap-4 items-start">
+                  <div className="p-2 bg-white rounded-xl shadow-sm shrink-0 border border-[#5C3327]/5">
+                    <Building2 className="w-5 h-5 text-[#B85D36]" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#1D1F1E] text-sm mb-1">Endereço Oficial</p>
+                    <p className="text-[#4E594F] text-sm leading-relaxed">
+                      Av. José Munia, 7301<br />
+                      4º andar, salas 401 e 402<br />
+                      São José do Rio Preto - SP
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="w-full h-64 sm:h-80 rounded-3xl overflow-hidden shadow-xl border border-[#5C3327]/15 bg-[#E8DED5]">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                frameBorder="0" 
-                scrolling="no" 
-                marginHeight="0" 
-                marginWidth="0" 
-                src="https://maps.google.com/maps?q=Av.%20Jos%C3%A9%20Munia,%207301,%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                title="Mapa Clínica Honos"
-              ></iframe>
+
+            <div className="lg:col-span-7 relative z-10">
+              <div className="relative w-full h-[320px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-[#FAF5F2] border border-[#5C3327]/15 group bg-[#E8DED5] transform transition-transform duration-700 hover:-translate-y-1 hover:shadow-3xl">
+                {/* Glassmorphism Inner Border */}
+                <div className="absolute inset-0 border-[6px] border-white/20 rounded-3xl pointer-events-none z-10 mix-blend-overlay"></div>
+                
+                {/* Map Iframe */}
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  marginHeight="0" 
+                  marginWidth="0" 
+                  src="https://maps.google.com/maps?q=Av.%20Jos%C3%A9%20Munia,%207301,%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  title="Mapa Clínica Honos"
+                  className="grayscale-[30%] contrast-110 opacity-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:opacity-100 transition-all duration-700 ease-in-out w-full h-full"
+                ></iframe>
+              </div>
             </div>
+            
           </div>
         </div>
 
