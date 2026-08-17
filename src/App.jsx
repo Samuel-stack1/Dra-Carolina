@@ -13,11 +13,8 @@ import InstagramCarouselSection from './components/InstagramCarouselSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import FloatingWhatsapp from './components/FloatingWhatsapp';
-import BookingModal from './components/BookingModal';
 
 export default function App() {
-  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
-
   useEffect(() => {
     const handleLoad = () => {
       ScrollTrigger.refresh();
@@ -29,11 +26,9 @@ export default function App() {
   }, []);
 
   const handleOpenBooking = () => {
-    setIsBookingModalOpen(true);
-  };
-
-  const handleCloseBooking = () => {
-    setIsBookingModalOpen(false);
+    const message = "Olá, equipe da Dra. Carolina Pitelli! Gostaria de saber mais informações sobre agendamento de consultas.";
+    const encoded = encodeURIComponent(message);
+    window.open(`https://wa.me/5517991850164?text=${encoded}`, '_blank');
   };
 
   return (
@@ -57,12 +52,6 @@ export default function App() {
 
       {/* Floating Action Button */}
       <FloatingWhatsapp onOpenBooking={handleOpenBooking} />
-
-      {/* Interactive Booking Modal */}
-      <BookingModal
-        isOpen={isBookingModalOpen}
-        onClose={handleCloseBooking}
-      />
     </div>
   );
 }
